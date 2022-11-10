@@ -84,7 +84,7 @@ async function run() {
 
     //orders api data create{post}//new
     app.post("/addServices", async (req, res) => {
-      const service = req.body; // client side theke pathano data ta akhne receive korbo
+      const service = req.body;
       const result = await serviceCollection.insertOne(service); //order collectioner modde ja upore banaice sekahne client side theke pathano data ta push kore delam. i mean db te
       res.send(result);
     });
