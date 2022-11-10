@@ -42,7 +42,7 @@ function verifyJWT(req, res, next) {
 ///console.log(process.env.DB_PASSWORD);
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.gavhqqs.mongodb.net/?retryWrites=true&w=majority`;
-// console.log(uri);
+
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
