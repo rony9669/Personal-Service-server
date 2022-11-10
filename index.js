@@ -38,8 +38,8 @@ function verifyJWT(req, res, next) {
   });
 }
 
-///console.log(process.env.DB_USER);
-///console.log(process.env.DB_PASSWORD);
+//console.log(process.env.DB_USER);
+//console.log(process.env.DB_PASSWORD);
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.gavhqqs.mongodb.net/?retryWrites=true&w=majority`;
 
