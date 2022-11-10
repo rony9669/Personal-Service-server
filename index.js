@@ -38,8 +38,8 @@ function verifyJWT(req, res, next) {
   });
 }
 
-///console.log(process.env.DB_USER); //env variable kaj kortese kina check korlam
-///console.log(process.env.DB_PASSWORD); //env variable kaj kortese kina check korlam
+///console.log(process.env.DB_USER);
+///console.log(process.env.DB_PASSWORD);
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.gavhqqs.mongodb.net/?retryWrites=true&w=majority`;
 // console.log(uri);
