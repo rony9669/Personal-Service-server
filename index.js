@@ -73,7 +73,7 @@ async function run() {
 
     //স্পেসিফিক ডাটা গেট করার জন্য
     app.get("/service/:id", async (req, res) => {
-      const id = req.params.id; // id ta dynamically asbe. and seta abhabe get krbo
+      const id = req.params.id;
 
       const query = { _id: ObjectId(id) }; // query ta akhn db te jeter sathe match kore dekhbe seta age likhbo {_id:} : then ObjectId ta import korbo mdb theke tar bhitore dyanmic bhabe asha id ta debo.
 
