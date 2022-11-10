@@ -68,7 +68,7 @@ async function run() {
       const query = {}; // query banalam
       const cursor = serviceCollection.find(query); // colection er help nea cursor banalam khujar jonno data ta computer er cursor er moto kore
       const services = await cursor.toArray(); // cursor er sahajje data ta array akare anlam jate amara client side e easily map korte pari or onno kisu
-      res.send(services); // data ta pathia delam response hisabe|
+      res.send(services);
     });
 
     //স্পেসিফিক ডাটা গেট করার জন্য
