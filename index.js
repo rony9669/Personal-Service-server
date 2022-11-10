@@ -63,7 +63,7 @@ async function run() {
       const services = await cursor.limit(3).toArray();
       res.send(services);
     });
-    //সব ডাটা গেট করার জন্য{SERVICE PAGE}
+    //সব ডাটা গেট করার জন্য{service page}
     app.get("/home/services", async (req, res) => {
       const query = {}; // query banalam
       const cursor = serviceCollection.find(query); // colection er help nea cursor banalam khujar jonno data ta computer er cursor er moto kore
