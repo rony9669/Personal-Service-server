@@ -56,7 +56,7 @@ async function run() {
 
     const reviewCollection = client.db("misusKitchen").collection("reviews");
 
-    //সব ডাটা গেট করার জন্য using sort method{HOME PAGE}
+    //সব ডাটা গেট করার জন্য using sort method{home page}
     app.get("/services", async (req, res) => {
       const query = {};
       const cursor = serviceCollection.find(query).sort({ _id: -1 });
